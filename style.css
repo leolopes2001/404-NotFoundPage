@@ -1,0 +1,158 @@
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-style: normal;
+}
+html{
+    font-size: 62.5%;
+}
+
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 3rem 2rem 9rem;
+}
+
+
+.nav{
+    align-self: flex-start;
+    font-family: 'Inconsolata';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    color: #333333;
+}
+.main{
+    display: grid;
+    grid-template-columns: 35% 65%;
+
+    place-items: center;
+}
+.main .title_text{
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 95px;
+    letter-spacing: -0.035em;
+    color: #333333;
+   
+}
+.main .paragraph_text{
+    font-family: 'Space Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    letter-spacing: -0.035em;
+    color: #4F4F4F;
+}
+.main .btn_text{
+    width: 176px;
+    height: 50px;
+    background: #333333;
+    font-family: 'Space Mono';
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 21px;
+    letter-spacing: -0.035em;
+    text-transform: uppercase;
+    border: none;
+    color: #FFFFFF;
+    margin-top: 3rem;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+img{
+    width: 95%;
+    
+}
+
+@media (max-width: 850px){
+    
+    .main .title_text{
+        font-size: 50px;
+    }
+
+   
+    
+}
+@media (max-width: 750px){
+    body{
+        padding: 3rem;
+    }
+    img{
+        width:100%;
+    }
+    
+
+   
+    
+}
+
+@media (max-width: 600px){
+    body{
+        height: auto;
+        padding: 5rem;
+        gap: 5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main{
+        display: flex;
+        flex-direction: column;
+        place-items: flex-start;
+        gap: 1rem;
+    }
+    .main .title_text{
+        line-height: 70px;
+    }
+    .img{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+    img{
+        width: 60%;
+    }
+    
+}
+@media (max-width: 400px){
+    body{
+    
+        padding: 3rem;
+      
+
+    }
+    .main .title_text{
+        line-height: 70px;
+    }
+   
+    
+}
+@media (max-width: 380px){
+   
+    .main .title_text{
+        font-size: 40px;
+    }
+    .main .paragraph_text{
+        font-size: 16px;
+    }
+   
+    
+}
